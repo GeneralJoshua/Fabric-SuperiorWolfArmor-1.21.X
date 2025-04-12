@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "tutorialmod",
+	"version": "${version}",
+	"name": "Tutorial Mod",
+	"description": "Lets you upgrade Wolf Armor and use armor templates on them!",
+	"authors": [
+		"General_JJ"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/GeneralJoshua/Fabric-SuperiorWolfArmor-1.21.X"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/tutorialmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.general_jj.tutorialmod.TutorialMod"
+		],
+		"fabric-datagen": [
+			"net.general_jj.tutorialmod.TutorialModDataGenerator"
+		],
+		"client": [
+			"net.general_jj.tutorialmod.TutorialModClient"
+		]
+	},
+	"mixins": [
+		"tutorialmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.13",
+		"minecraft": "~1.21.5",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
